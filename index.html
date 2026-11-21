@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jogo da Memória</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1><span class="emoji" aria-hidden="true">🧠</span> Jogo da Memória</h1>
+
+    <p class="placar">
+      Jogadas: <strong id="jogadas">0</strong>
+      <span class="separador">|</span>
+      Tempo: <strong id="tempo">0:00</strong>
+    </p>
+
+    <div class="tabuleiro">
+      <div class="grade" id="grade"></div>
+
+      <div class="fim" id="fim" hidden>
+        <p class="titulo-fim">Parabéns! 🎉</p>
+        <p class="resultado">
+          Você achou todos os pares em <strong id="jogadas-final">0</strong> jogadas
+          e <strong id="tempo-final">0:00</strong>.
+        </p>
+        <button type="button" id="btn-reiniciar">Jogar de novo</button>
+      </div>
+    </div>
+
+    <button type="button" class="btn-escuro" id="btn-novo">Reiniciar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
